@@ -3,3 +3,4 @@
   tasks:  # tasks = modules=collections 
   - name: hello world
     debug:
+      msg: "Hello Ansible"
