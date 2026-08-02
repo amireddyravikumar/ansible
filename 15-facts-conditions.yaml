@@ -1,0 +1,11 @@
+- name: check even or odd numbers
+  hosts: fronend
+  tasks:
+  - name: print if Redhat
+    debug:
+      msg: "OS familty is Redhat, pacjakge is dnf"
+    when: ansible_facts.os_family == "Redhat"
+  - name: print if Debian
+    debug:
+      msg: "OS familty is Debian, pacjakge is apt-get"
+    when: ansible_facts.os_family == "Debian"
