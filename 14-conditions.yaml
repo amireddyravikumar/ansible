@@ -1,13 +1,14 @@
 - name: check even or odd numbers
   hosts: local
   connection: local
-  vars:
-    given_number: 1
+  # vars:
+  #   given_number: 1
   tasks:
   - name: print even number
     debug:
       msg: "even number: {{ given_number }}"  
     when: given_number%2 == 0
+
   - name: print  odd number
     debug:
       msg: "odd number: {{ given_number }}"  
