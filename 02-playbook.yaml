@@ -4,3 +4,6 @@
   - name: hello world
     debug:
       msg: "Hello Ansible"
+  - name: hello world1
+    debug:
+      msg: "Hello Ansible1"
