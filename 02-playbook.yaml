@@ -1,0 +1,5 @@
+- name: demoon debug
+  hosts: frontend # Target server
+  tasks:  # tasks = modules=collections 
+  - name: hello world
+    debug:
