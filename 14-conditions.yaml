@@ -7,9 +7,9 @@
   - name: print even number
     debug:
       msg: "Yes, even number {{ given_number }}"  
-    when: given_number % 2 = 0
+    when: given_number%2 = 0
   - name: print  odd number
     debug:
       msg: "Yes, odd number {{ given_number }}"  
-    when: given_number % 2 = 1
+    when: given_number%2 = 1
                  
