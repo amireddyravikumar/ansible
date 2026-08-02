@@ -1,4 +1,4 @@
-- name: dome on 
+- name: demo on prompt
   hosts: local
   connecion: local
   vars_prompt:
