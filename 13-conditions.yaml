@@ -2,7 +2,7 @@
   hosts: local
   connection: local
   vars:
-    live_session: 5
+    live_session: 1
   tasks:
   - name: print conditions
     debug:
