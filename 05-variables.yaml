@@ -9,5 +9,5 @@
   - name: print information
     vars:
       course: "DevOps"
-  - debug:
+    debug:
       msg: "Hi, I am learning {{ course }}, Trainer is {{ trainer }}, duration is {{ duration }} "
