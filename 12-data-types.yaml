@@ -1,0 +1,22 @@
+- name: data types
+  hosts: local
+  connection: local
+  vars:
+    course: "DevOps"
+    duration: 150
+    is_live_session: true
+    topics: 
+    - linux
+    - shell
+    - ansile
+    more_details: # Map
+      months: "5"
+      triner: "Shiva"
+  taks:
+  - name: print info
+    msg: |
+      name: {{ course }}
+      duration: {{ duration }}
+      is_it_live: {{ is_live_session }}
+      topics: {{ topics }}
+      more_details: {{ more_details }}
