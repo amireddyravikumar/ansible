@@ -1,0 +1,11 @@
+- name: dome on loops
+  hosts: local
+  connection: local
+  tasks:
+  - name: print the names
+    debug:
+      msg: "Hi, {{ item }} "
+    items:
+    - "Ravi"
+    - "Shivakumar"
+    - "amireddy"
