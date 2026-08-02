@@ -1,5 +1,6 @@
 - name: demo install multiple packages
   hosts: frontend
+  become: yes
   tasks:
   - name: install packages
     package:
