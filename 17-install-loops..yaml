@@ -1,6 +1,5 @@
 - name: demo install multiple packages
-  hosts: local
-  connection: local
+  hosts: frontend
   tasks:
   - name: install packages
     package:
