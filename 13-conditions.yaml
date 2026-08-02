@@ -1,0 +1,11 @@
+- name: conditions
+  hosts: local
+  connection: local
+  vars:
+    live_session: 5
+  tasks:
+  - name: print conditions
+    debug:
+      msg: "Yes, display message"  
+    when: live_session > 2
+         
