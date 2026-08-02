@@ -1,7 +1,7 @@
-- name: demo on command line
+- name: demo on common
   hosts: frontend
   connection: local
   tasks:
-  - name: print the inventory values
+  - name: print the common values
     debug:
-      msg: "Hi, I am learning {{ course }}, Trainer is {{ trainer }}, duration is {{ duration }} and common key {{ common_key }} and name = {{ name }}"
+      msg: "name = {{ name }}"
