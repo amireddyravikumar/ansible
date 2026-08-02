@@ -9,3 +9,6 @@
     debug:
       msg: "OS familty is Debian, pacjakge is apt-get"
     when: ansible_facts.os_family == "Debian"
+  - name: print the facts
+    debug:
+      msg: "OS familty is {{ ansible_facts.os_family }}"
