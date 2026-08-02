@@ -1,0 +1,14 @@
+- name: dome on 
+  hosts: local
+  connecion: local
+  vars_prompt:
+    - name: username
+      propmt: "Please enter username"
+      private: false
+    - name: password
+      propmt: "Please enter password"
+      private: true
+  tasks:
+  - name: print the prompt values
+    debug:
+      msg: " username is {{ username }} and password is {{ password }}"
