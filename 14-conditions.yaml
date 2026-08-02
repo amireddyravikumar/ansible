@@ -1,8 +1,8 @@
 - name: check even or odd numbers
   hosts: local
   connection: local
-  # vars:
-  #   given_number: 1
+  vars:
+    given_number: 1
   tasks:
   - name: print even number
     debug:
