@@ -1,5 +1,5 @@
 - name: check even or odd numbers
-  hosts: fronend
+  hosts: frontend
   tasks:
   - name: print if Redhat
     debug:
