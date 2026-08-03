@@ -4,6 +4,9 @@
   vars:
     topics: Linux, Shell, Ansible, Terraform
   tasks:
-  - name: print filters 
+  - name: convert string to list 
     debug:
       msg: "{{ topics | split(',') }}"
+  - name: set default value
+    debug:
+      msg: "Hi, {{ GREETING | default('ravi') }}"
