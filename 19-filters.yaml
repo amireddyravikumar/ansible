@@ -54,3 +54,7 @@
   - name: convert list to map
     debug:
       msg: "{{ fruits_list | items2dict(key_name='fruit', value_name='color') }}"
+
+  - name: convert upper case
+    debug:
+      msg: "{{ 'ravikumar' | upper }}"
