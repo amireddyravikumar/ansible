@@ -28,7 +28,11 @@
             "value": "Dev"
         }
     ]
-
+    fruits_list:
+    - fruit: "apple"
+      color: "red"
+    - fruit: "pear"
+      color: "yellow"
   tasks:
   - name: convert string to list 
     debug:
@@ -46,3 +50,7 @@
   - name: convert list to map
     debug:
       msg: "{{ tagList | items2dict }}"
+      
+  - name: convert list to map
+    debug:
+      msg: "{{ fruits_list | items2dict(key_name='fruit', value_name='color') }}"
