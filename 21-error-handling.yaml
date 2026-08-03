@@ -7,10 +7,12 @@
     command: id roboshop
     register: user_output
     ignore_errors: true
+
   - name: print user output
     debug:
       msg: "{{ user_output }}"
+
   - name: create user
     command: useradd roboshop
-    when: user_output.rc !=1
+    when: user_output.rc !=0
        
