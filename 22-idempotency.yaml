@@ -4,4 +4,5 @@
   become: yes
   tasks:
   - name: create  expense user
-    command: useradd expense
+    user:
+      name: expense # useradd expense
