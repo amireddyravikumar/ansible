@@ -14,6 +14,21 @@
       value: roboshop
     - key: environment
       value: Dev
+    tagList: [
+        {
+            "key": "name",
+            "value": "Ansile"
+        },
+        {
+            "key": "project",
+            "value": "roboshop"
+        },
+        {
+            "key": "environment",
+            "value": "Dev"
+        }
+    ]
+
   tasks:
   - name: convert string to list 
     debug:
@@ -28,3 +43,6 @@
   - name: convert list to map
     debug:
       msg: "{{ my_list | items2dict }}"
+  - name: convert list to map
+    debug:
+      msg: "{{ tagList | items2dict }}"
