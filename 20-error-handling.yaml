@@ -4,5 +4,5 @@
 
   tasks:
   - name: run command
-    command: cat /etc/passwd | grep root
-    # shell: cat /etc/passwd | grep root
+    # command: cat /etc/passwd | grep root
+    shell: cat /etc/passwd | grep root
