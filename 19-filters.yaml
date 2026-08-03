@@ -7,6 +7,8 @@
       name: Ansile
       project: roboshop
       environment: Dev
+    ip_address:
+      1000.29.30.2922
     my_list:
     - key: name
       value: Ansible
@@ -58,3 +60,6 @@
   - name: convert upper case
     debug:
       msg: "{{ 'ravikumar' | upper }}"
+  - name: checking IPv4 address
+    debug:
+      msg: "{{ ip_address | ansible.utils.ipv4 }}"
