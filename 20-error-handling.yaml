@@ -11,8 +11,8 @@
     debug:
       msg: "{{ users_output }}"  
   - name: list files
-    command: ls -ltr > /tmp/files.txt
-    # shell: ls -ltr > /tmp/files.txt
+    # command: ls -ltr > /tmp/files.txt
+    shell: ls -ltr > /tmp/files.txt
     register: users_output1
   - name: print output
     debug:
