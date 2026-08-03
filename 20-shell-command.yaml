@@ -1,4 +1,4 @@
-- name: demo on error handling
+- name: demo on shell and command
   hosts: local
   connection: local
 
@@ -14,6 +14,6 @@
     # command: ls -ltr > /tmp/files.txt
     shell: ls -ltr > /tmp/files.txt
     register: users_output1
-  - name: print output
+  - name: print outputs
     debug:
       msg: "{{ users_output1 }}"  
